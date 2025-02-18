@@ -1,14 +1,14 @@
-FROM node:20 AS build
-
-# 设置工作目录
+# Dockerfile (适用于 Vite 项目)
+# 阶段 1: 构建
+FROM node:16-alpine AS build
 WORKDIR /app
-
+COPY package.json yarn.lock ./
+RUN yarn install --frozen-lockfile
 COPY . .
-RUN npm config set registry  https://registry.npmmirror.com  
-RUN npm install
-RUN npm run build
+RUN yarn build
 
-# 将构建好的 React 应用复制到 Nginx 容器的默认站点目录
-FROM nginx:alpine
-COPY ./public/default.conf /etc/nginx/conf.d/default.conf
-COPY --from=build /app/build /app
+# 阶段 2: 运行
+FROM nginx:stable-alpine
+COPY --from=build /app/build /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]

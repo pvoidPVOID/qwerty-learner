@@ -1,9 +1,6 @@
-version: '3'
-
+version: "3.8"
 services:
-  qwertylearner:
-    build:
-      context: .
-      dockerfile: Dockerfile
+  web:
+    image: pvoid/qwerty-learner
     ports:
-      - '8990:5173'
+      - "8272:80"
