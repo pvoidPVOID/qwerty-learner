@@ -84,6 +84,7 @@
     ]
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "@iconify/json": "^2.2.242",
     "@playwright/test": "^1.40.1",
     "@svgr/core": "^7.0.0",
@@ -103,7 +104,6 @@
     "@types/react-router-dom": "^5.1.7",
     "@vitejs/plugin-react": "^3.1.0",
     "autoprefixer": "^10.4.13",
-    "cross-env": "^7.0.3",
     "eslint": "^8.35.0",
     "eslint-config-prettier": "^8.7.0",
     "eslint-config-react-app": "^7.0.1",

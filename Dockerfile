@@ -5,7 +5,9 @@ WORKDIR /app
 COPY package.json yarn.lock ./
 RUN yarn install --frozen-lockfile
 COPY . .
+# 清除缓存并强制重新构建
 RUN yarn build
+
 
 # 阶段 2: 运行
 FROM nginx:stable-alpine
