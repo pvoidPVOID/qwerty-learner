@@ -1885,6 +1885,7 @@ const childrenEnglish: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
+
   {
     id: 'pep-sl-er2',
     name: '人教版(新起点)二年级下',
@@ -2491,7 +2492,17 @@ const childrenEnglish: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
-
+  {
+    id: 'shanghai-6-2word',
+    name: '上海新教材六年级下',
+    description: '上海新教材六年级下',
+    category: '青少年英语',
+    tags: ['上海版'],
+    url: '/dicts/shanghai-6-2-word.json',
+    length: 274,
+    language: 'en',
+    languageCategory: 'en',
+  },
   {
     id: 'Yilin1',
     name: '高中必修1',
@@ -3330,6 +3341,17 @@ const childrenEnglish: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
+  {
+    id: 'Cambridge_JOIN_IN',
+    name: '剑桥小学英语 JOIN IN',
+    description: '外研社和剑桥大学出版社依据《义务教育英语课程标准》要求联合为我国小学生开发的一套英语教材。',
+    category: '青少年英语',
+    tags: ['其他'],
+    url: '/dicts/Cambridge_JOIN_IN.json',
+    length: 1350,
+    language: 'en',
+    languageCategory: 'en',
+  },
 ]
 
 // 编程字典
@@ -3817,6 +3839,17 @@ const programming: DictionaryResource[] = [
     length: 23,
     language: 'code',
     languageCategory: 'code',
+  },
+  {
+    id: 'SoundSfxKey',
+    name: '游戏音效库常用英语',
+    description: '游戏音效库常用英语',
+    category: '代码练习',
+    tags: ['RAZ'],
+    url: '/dicts/AudioKey.json',
+    length: 535,
+    language: 'en',
+    languageCategory: 'en',
   },
 ]
 
